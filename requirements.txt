@@ -1,6 +1,15 @@
-flask==2.0.1
-flask-cors==3.0.10
-joblib==1.1.0
-numpy==1.21.2
-textblob==0.15.3
-scikit-learn==0.24.2 
+pandas
+numpy
+matplotlib
+scikit-learn
+transformers
+torch # Or tensorflow if you chose that backend
+datasets
+tqdm
+seaborn
+nltk
+flask_cors
+flask
+transformers
+text_blob
+collections
