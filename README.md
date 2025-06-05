@@ -66,22 +66,22 @@ The fine-tuning script (`TrainModel.ipynb` - assuming this is what you named you
 * **Place your CSV:** Put your `mental_health_data.csv` (or whatever you named it) in the correct path relative to your script, as specified in the `DATA_CSV_PATH` variable within the script.
 * **Run the fine-tuning script:**
     ```bash
-    python fine_tune_model.py
+    python TrainModel.ipynb
     ```
     This script will:
     * Load your data.
-    * Randomly sample 150 data points for training (as configured in the script).
+    * Randomly sample all (or set your own sample size) data points in csv for training.
     * Split the data into training and evaluation sets.
     * Train the model for a few epochs.
     * Save the fine-tuned model and tokenizer into the `./my_mental_health_classifier` directory.
 
 ### 3. Using the Interactive Classifier
 
-Once the model is fine-tuned and saved, you can use the interactive script (`iteractic.py`) to test it.
+Once the model is fine-tuned and saved, you can use the interactive script (`iteractiv.py`) to test it.
 
 * **Run the interactive script:**
     ```bash
-    python interactive_diagnosis.py
+    python iteractiv.py
     ```
 
 Open `index.html` and play with the bot on web!
@@ -92,7 +92,6 @@ The model was fine-tuned on a custom dataset, which is expected to be a CSV file
 
 ## Limitations
 
-* **Extremely Limited Data:** The model is trained on a tiny dataset (150 samples). This severely impacts its ability to generalize, leading to low accuracy and unreliable predictions.
 * **Bias:** The model's performance and biases are entirely dependent on the quality, diversity, and representativeness of the training data.
 * **Non-Clinical Use Only:** This model is not a diagnostic tool. Mental health is complex, and AI models cannot replace professional judgment.
 
