@@ -137,7 +137,6 @@ def analyze():
             confidence = prediction['score']
         except Exception as e:
             print(f"Error in model prediction: {e}")
-            print(traceback.format_exc())
             category = detect_mental_state(text)
             confidence = 0.5
     else:
